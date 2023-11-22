@@ -746,9 +746,7 @@ label{
     background-color: #45a049;
 }
 
-/* Add more styles as needed */
 
-/* Optional: Responsive Styles */
 @media screen and (max-width: 768px) {
     .content-container {
         max-width: 100%;
@@ -756,7 +754,7 @@ label{
     }
 }
 
-/* Add your styles for the payment page here */
+
 .payment-container {
     text-align: center;
     margin: 50px;
@@ -766,33 +764,43 @@ label{
     margin-top: 20px;
 }
 
-/* Add more styles as needed */
 
-/* Style for the tooltip */
 .tooltip {
     position: relative;
     display: inline-block;
     cursor: pointer;
   }
-
+  
   .tooltip .tooltiptext {
     visibility: hidden;
-    width: 120px;
-    background-color: #333;
+    width: 650px;
+    background-color: #45a049;
     color: #fff;
     text-align: center;
     border-radius: 6px;
     padding: 5px;
     position: absolute;
     z-index: 1;
-    bottom: 125%; /* Position the tooltip above the text */
+    bottom: 125%; 
     left: 50%;
     margin-left: -60px;
     opacity: 0;
     transition: opacity 0.3s;
   }
-
+  
   .tooltip:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
+  }
+  
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 50;
+    left: 100;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent;
   }
